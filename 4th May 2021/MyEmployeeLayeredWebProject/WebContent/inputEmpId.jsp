@@ -7,10 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Employee Management System</h1>
-<a href="./getAllEmps">Display All Employees</a><br><br>
-<a href="./inputEmpId.jsp">Search Employee</a><br><br>
-<a href="./insertEmployee.jsp">Insert New Employees</a><br><br>
-<a href="./insertIdForDelete.jsp">Delete Existing Employees</a><br><br>
+<form action="./search">
+	Enter Employee ID to be searched for : <input type="text" name="empId"><br><br>
+	<input type="submit" value="Search">
+</form>
+<br><br>
+<a href="./index.jsp">Go to Main Page</a>
 </body>
 </html>
