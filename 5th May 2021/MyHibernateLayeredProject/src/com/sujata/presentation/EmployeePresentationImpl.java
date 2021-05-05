@@ -1,5 +1,6 @@
 package com.sujata.presentation;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.sujata.bean.Employee;
@@ -15,7 +16,8 @@ public class EmployeePresentationImpl implements EmployeePresentation {
 		System.out.println("2. Search By ID ");
 		System.out.println("3. Delete Employee By ID");
 		System.out.println("4. Update Employee Salary");
-		System.out.println("5. Exit");
+		System.out.println("5. List All Employees ");
+		System.out.println("6. Exit");
 
 	}
 
@@ -67,6 +69,12 @@ public class EmployeePresentationImpl implements EmployeePresentation {
 				System.out.println("Salary updation Failed!");
 			break;
 		case 5:
+			ArrayList<Employee> employees=employeeService.getAllEmployeeRecords();
+			for(Employee e:employees){
+				System.out.println(e);
+			}
+			break;
+		case 6:
 			System.out.println("Thanks for using employee management system, have a great day!");
 			System.exit(0);
 		}

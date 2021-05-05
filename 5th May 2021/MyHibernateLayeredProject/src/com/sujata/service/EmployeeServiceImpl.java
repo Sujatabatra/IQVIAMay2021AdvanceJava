@@ -11,8 +11,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private EmployeeDao employeeDao=new EmployeeDaoImpl();
 	
 	public ArrayList<Employee> getAllEmployeeRecords() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return employeeDao.getAllEmployees();
 	}
 
 	public boolean insertEmployeeRecord(Employee employee) {
