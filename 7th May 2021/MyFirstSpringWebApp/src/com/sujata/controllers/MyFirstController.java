@@ -14,7 +14,7 @@ public class MyFirstController {
 		//data to be displayed on view
 		mv.addObject("message", "Welcome to the world of Spring MVC!");
 		//view name
-		mv.setViewName("my.jsp");
+		mv.setViewName("my");
 		return mv;
 	}
 	
@@ -25,7 +25,7 @@ public class MyFirstController {
 		//data to be displayed on view
 		mv.addObject("message", "Welcome once again to the world of Spring MVC!");
 		//view name
-		mv.setViewName("my.jsp");
+		mv.setViewName("my");
 		return mv;
 	}
 }
