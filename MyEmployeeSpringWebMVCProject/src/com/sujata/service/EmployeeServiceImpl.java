@@ -4,12 +4,14 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.sujata.bean.Employee;
 import com.sujata.persistence.EmployeeDao;
 import com.sujata.persistence.EmployeeDaoImpl;
 
-@Component("empService")
+//@Component("empService")
+@Service("empService")
 public class EmployeeServiceImpl implements EmployeeService {
 
 	@Autowired
